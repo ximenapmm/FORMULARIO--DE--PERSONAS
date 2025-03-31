@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Formulario</a></li>
+            <li><a href="paginas/ver_registros.php">Ver Registros</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor">
+
+        <form action="paginas/formulario.php" method="POST">
+            <h1>Formulario de Registro</h1>
+            Nombre completo: <br>
+            <input class="caja" type="text" placeholder="Nombre completo" name="nombre" required><br>
+
+            Fecha de nacimiento: <br>
+            <input class="caja" type="date" placeholder="Fecha de nacimiento" name="fecha" required><br>
+
+            Correo electrónico: <br>
+            <input class="caja" type="email" placeholder="Correo electrónico" name="correo" required><br>
+
+            Contraseña: <br>
+            <input class="caja" type="password" placeholder="Contraseña" name="contra" required><br><br>
+
+            <input class="btn" type="submit" value="Registrar">
+        </form>
+    </div>
+
+</body>
+</html>
